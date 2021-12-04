@@ -1,8 +1,12 @@
-import type { AppProps } from 'next/app'
-import '../styles/main.scss'
+import type { AppProps } from "next/app"
+import "tailwindcss/tailwind.css"
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <div className="bg-gray-50 h-screen w-full">
+      <Component {...pageProps} />
+    </div>
+  )
 }
 
 export default MyApp
