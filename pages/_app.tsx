@@ -1,8 +1,17 @@
-import type { AppProps } from 'next/app'
-import '../styles/main.scss'
+import { ChakraProvider, Container } from "@chakra-ui/react"
+import type { AppProps } from "next/app"
+import Navbar from "../components/Navbar"
+import theme from "../theme"
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ChakraProvider theme={theme}>
+      <Container maxW="900px" fontSize={["md", "lg"]}>
+        <Navbar />
+        <Component {...pageProps} />
+      </Container>
+    </ChakraProvider>
+  )
 }
 
 export default MyApp
