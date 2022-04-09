@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Box, Button, useColorMode } from "@chakra-ui/react"
+import { useColorMode } from "@chakra-ui/react"
 import { SunIcon, MoonIcon } from "@chakra-ui/icons"
 
 function BtnColorMode() {
