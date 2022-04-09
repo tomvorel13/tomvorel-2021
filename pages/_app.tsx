@@ -1,3 +1,6 @@
+import "@fontsource/inter/400.css"
+import "@fontsource/inter/700.css"
+
 import { ChakraProvider, Container } from "@chakra-ui/react"
 import type { AppProps } from "next/app"
 import Navbar from "../components/Navbar"
