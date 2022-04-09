@@ -1,5 +1,6 @@
-import "@fontsource/inter/400.css"
-import "@fontsource/inter/700.css"
+import "@fontsource/nunito/400.css"
+import "@fontsource/nunito/700.css"
+import "@fontsource/grape-nuts/400.css"
 
 import { ChakraProvider, Container } from "@chakra-ui/react"
 import type { AppProps } from "next/app"

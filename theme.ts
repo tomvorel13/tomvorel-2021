@@ -7,7 +7,7 @@ const config: ThemeConfig = {
 const theme = extendTheme({
   config,
   fonts: {
-    body: "Inter, sans-serif",
+    body: "Nunito, sans-serif",
   },
 })
 

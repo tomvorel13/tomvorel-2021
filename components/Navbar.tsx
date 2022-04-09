@@ -5,7 +5,9 @@ import BtnColorMode from "./BtnColorMode"
 function Navbar() {
   return (
     <Flex as="header" py={4} justifyContent="space-between" alignItems="center">
-      <Box>LOGO</Box>
+      <Box fontFamily={"Grape Nuts"} fontSize={["2xl", "3xl"]}>
+        tomvorel.com
+      </Box>
       <Flex as="nav">
         <Link _hover={{ textDecoration: "none" }} mr={4}>
           Home
