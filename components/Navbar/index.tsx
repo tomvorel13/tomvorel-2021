@@ -1,4 +1,5 @@
 import * as React from "react"
+import NextLink from "next/link"
 import { Box, Flex, Link } from "@chakra-ui/react"
 import BtnColorMode from "./BtnColorMode"
 
@@ -9,16 +10,24 @@ function Navbar() {
         tomvorel.com
       </Box>
       <Flex as="nav">
-        <Link _hover={{ textDecoration: "none" }} mr={4}>
-          Home
-        </Link>
-        <Link _hover={{ textDecoration: "none" }} mr={4}>
-          About
-        </Link>
-        <Link _hover={{ textDecoration: "none" }} mr={4}>
-          Blog
-        </Link>
-        <Link _hover={{ textDecoration: "none" }}>Contact</Link>
+        <NextLink href="/" passHref>
+          <Link _hover={{ textDecoration: "none" }} mr={4}>
+            Home
+          </Link>
+        </NextLink>
+        <NextLink href="/about" passHref>
+          <Link _hover={{ textDecoration: "none" }} mr={4}>
+            About
+          </Link>
+        </NextLink>
+        <NextLink href="/blog" passHref>
+          <Link _hover={{ textDecoration: "none" }} mr={4}>
+            Blog
+          </Link>
+        </NextLink>
+        <NextLink href="/contact" passHref>
+          <Link _hover={{ textDecoration: "none" }}>Contact</Link>
+        </NextLink>
       </Flex>
       <BtnColorMode />
     </Flex>
